@@ -38,8 +38,7 @@ int prinnoct(va_list arguments, char *buf, unsigned int ibuf)
 			ibuf = handl_buf(buf, octal[i], ibuf);
 			count++;
 		}
-	}
-	free(binary);
-	free(octal);
-	return (count + 1);
+		free(binary);
+		free(octal);
+		return (count + 1);
 }

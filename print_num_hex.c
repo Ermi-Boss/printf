@@ -7,6 +7,7 @@
  * @ibuf: index for buffer pointer
  * Return: number of chars printed
  */
+
 int prinnhex(va_list arguments, char *buf, unsigned int ibuf)
 {
 	int int_input, i, isnegative, count, first_digit;
@@ -17,7 +18,6 @@ int prinnhex(va_list arguments, char *buf, unsigned int ibuf)
 	if (int_input == 0)
 	{
 		ibuf = handl_buf(buf, '0', ibuf);
-		return (1);
 	}
 	if (int_input < 0)
 	{
